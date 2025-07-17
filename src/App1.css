@@ -1,0 +1,36 @@
+*{
+    scroll-behavior: smooth;
+}
+.navbar{
+  position: sticky;
+  font-size: 1rem;
+  text-align: center;
+  font-family: sans-serif;
+  height: 5px;
+  padding: 0.01rem 0.5rem;
+}
+#nav {
+  display: flex;
+  justify-self: end;
+  justify-content: space-between;
+}
+
+.navbar-links-container a:hover,
+.navbar-links-container a:focus,
+.navbar-links-container a:active {
+  text-decoration: underline;
+}
+.nav-logo-container{
+    display: flex;
+    justify-self: start;
+}
+.navbar-menu-container {
+  display: none;
+}
+.navbar-links-container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
