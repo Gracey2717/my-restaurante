@@ -2,6 +2,10 @@ import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png"; // Assuming you have a home banner image
 import BannerImage from "../Assets/crochet-basket.png"; // Assuming you have a banner image
 import {FiArrowRight} from "react-icons/fi";
+import About from './About';
+import Work from './Work'; 
+import Testimonials from './Testimonials';
+import Contact from "./Contact";
 
 function Home() {
   return (
@@ -18,9 +22,14 @@ function Home() {
           </button>
         </div>
         <div className="home-image-container">
-          <img src={BannerImage} alt="Delicious Food" />
+          <img src={BannerImage} alt="Beautiful Crochet" />
         </div>
+        
       </div>
+      <About />
+      <Work />
+      <Testimonials />
+      <Contact />
     </div>
   );
 }

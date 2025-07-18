@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import {
@@ -19,13 +20,16 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = React.useState(false);
 
   const menuOptions = [
-  { text: "Home", icon: <HomeIcon />, href: "#home" },
-  { text: "About", icon: <InfoIcon />, href: "#about" },
-  { text: "Testimonies", icon: <CommentRoundedIcon />, href: "#testimonials" },
-  { text: "Contact", icon: <PhoneRoundedIcon />, href: "#contact" },
-  { text: "Cart", icon: <ShoppingCartRoundedIcon />, href: "#" },
-];
-
+    { text: "Home", icon: <HomeIcon />, href: "#home" },
+    { text: "About", icon: <InfoIcon />, href: "#about" },
+    {
+      text: "Testimonies",
+      icon: <CommentRoundedIcon />,
+      href: "#testimonials",
+    },
+    { text: "Contact", icon: <PhoneRoundedIcon />, href: "#contact" },
+    { text: "Cart", icon: <ShoppingCartRoundedIcon />, href: "#" },
+  ];
 
   return (
     <nav className="navbar">
@@ -36,16 +40,16 @@ const Navbar = () => {
 
       {/* Links (desktop only) */}
       <div className="navbar-links-container" id="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#testimonials">Testimonies</a>
-        <a href="#contact">Contact</a>
-        <a href="#">
+        <Link to="/">Home</Link>
+        <Link to="#about">About</Link>
+        <Link to="#testimonials">Testimonies</Link>
+        <Link to="#contact">Contact</Link>
+        <Link href="#">
           <BsCart2 className="navbar-cart-icon" />
-        </a>
+        </Link>
         <button className="primary-button">Bookings Now</button>
       </div>
-     {/* Hamburger Icon (mobile) */}
+      {/* Hamburger Icon (mobile) */}
       <div className="menu-icon" onClick={() => setOpenMenu(true)}>
         <HiOutlineBars3 size={30} />
       </div>

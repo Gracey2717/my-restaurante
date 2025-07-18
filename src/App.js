@@ -1,26 +1,47 @@
-import React from 'react';
-import Navbar from './components/Navbar1';
-import Home from './components/Home';
-import About from './components/About';
-import Work from './components/Work'; 
-import Testimonials from './components/Testimonials';
-import Contact from "./components/Contact";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar1";
+import Home from "./components/Home";
+import Work from "./components/Work";
 import Footer from "./components/Footer";
-import './App.css'; // Assuming you have some styles in App.css
+import ProductShowcase from "./Data/ProductShowcase"; // Adjust path as needed
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
-      <About />
-      <Work />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+
+        <Routes>
+          {/* 👇 This is your homepage — includes all sections */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Work />
+                {/* You can add About, Testimonials, etc. here too */}
+                <Footer />
+              </>
+            }
+          />
+
+          {/* 👇 This is the only other route */}
+          <Route
+            path="/styles"
+            element={
+              <>
+                <ProductShowcase initialCategory="Style" />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
-
