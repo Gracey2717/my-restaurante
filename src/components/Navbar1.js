@@ -41,13 +41,23 @@ const Navbar = () => {
       {/* Links (desktop only) */}
       <div className="navbar-links-container" id="nav">
         <Link to="/">Home</Link>
-        <Link to="#about">About</Link>
-        <Link to="#testimonials">Testimonies</Link>
-        <Link to="#contact">Contact</Link>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonies</a>
+        <a href="#contact">Contact</a>
         <Link href="#">
           <BsCart2 className="navbar-cart-icon" />
         </Link>
-        <button className="primary-button">Bookings Now</button>
+        <button
+          className="primary-button"
+          onClick={() =>
+            window.open(
+              "https://wa.me/2347039020234?text=I'm%20interested%20in%20booking%20a%20crochet%20style",
+              "_blank"
+            )
+          }
+        >
+          Bookings Now
+        </button>
       </div>
       {/* Hamburger Icon (mobile) */}
       <div className="menu-icon" onClick={() => setOpenMenu(true)}>

@@ -8,7 +8,14 @@ import Hookset from "../Assets/hook-set.jpg";
 import Yarns from "../Assets/flat-lay.jpg";
 import Granny from "../Assets/granny-square.jpg";
 import Grandma from "../Assets/g-squares.jpg";
-import CrochetBag from "../Assets/gs-bag.jpg"
+import CrochetBag from "../Assets/gs-bag.jpg";
+import Scrunchies from "../Assets/scrunchies.jpg";
+import CloseUp from "../Assets/close-up.jpg";
+import KnittedBag from "../Assets/knitted-bag.jpg";
+import PinkJacket from "../Assets/pink-jacket.jpg";
+import RedBag from "../Assets/red-bag.jpg";
+import OrangeBag from "../Assets/orange-bag.jpg";
+
 
 const crochetProducts = [
   {
@@ -38,7 +45,7 @@ const crochetProducts = [
   {
     id: 4,
     name: "Winter Hat Pattern",
-    category: "Style",
+    category: "Handmade",
     price: 1000,
     image: Hat,
     description: "DIY crochet pattern for cozy hats.",
@@ -46,7 +53,7 @@ const crochetProducts = [
   {
     id: 5,
     name: "Beginner Style Kit",
-    category: "Style",
+    category: "Hook",
     price: 3500,
     image: Hookset,
     description: "All-in-one crochet starter pack.",
@@ -77,50 +84,50 @@ const crochetProducts = [
   },
   {
     id: 9,
-    name: "Winter Hat Pattern",
-    category: "Style",
+    name: "Orange Bag",
+    category: "Handmade",
     price: 1000,
-    image: Hat,
+    image: OrangeBag,
     description: "DIY crochet pattern for cozy hats.",
   },
   {
     id: 10,
-    name: "Beginner Style Kit",
-    category: "Style",
+    name: "Simple Color Bag",
+    category: "Handmade",
     price: 3500,
-    image: Hookset,
+    image: RedBag,
     description: "All-in-one crochet starter pack.",
   },
    {
     id: 11,
-    name: "Colorful Yarn Bundle",
-    category: "Yarn",
+    name: "Cute Pink Sweater",
+    category: "Handmade",
     price: 1500,
-    image: BlueYarn,
+    image: PinkJacket,
     description: "A mix of vibrant yarns for colorful projects.",
   },
   {
     id: 12,
-    name: "Ergonomic Hook Set",
-    category: "Hook",
+    name: "Detailed Bag Design",
+    category: "Handmade",
     price: 3000,
-    image: Hook,
+    image: KnittedBag,
     description: "Comfort grip hooks for smooth crocheting.",
   },
   {
     id: 13,
-    name: "Crochet Bunny Toy",
-    category: "Handmade",
+    name: "Pastel colors",
+    category: "Yarn",
     price: 4500,
-    image: Bunny,
+    image: CloseUp,
     description: "Soft, handmade crochet bunny for gifts.",
   },
   {
     id: 14,
-    name: "Winter Hat Pattern",
-    category: "Style",
+    name: "Simple cute",
+    category: "Accessories",
     price: 1000,
-    image: Hat,
+    image: Scrunchies,
     description: "DIY crochet pattern for cozy hats.",
   },
   {

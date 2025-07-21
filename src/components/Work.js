@@ -13,16 +13,19 @@ const Work = () => {
       image: PickMeals,
       title: 'Pick Style',
       description: 'Select your favorite styles from our menu.',
+      buttonText: 'Explore Styles',
     },
     {
       image: OrderMeals,
       title: 'Customize It',
       description: 'Choose Yarn color and crochet styles in your liking.',
+      buttonText: 'Explore Colors',
     },
     {
       image: DeliveryMeals,
       title: 'Make Payment',
       description: 'Process delivery to your doorstep.',
+      buttonText: 'Payment Process',
     },
   ];
 
@@ -41,24 +44,20 @@ const Work = () => {
             </div>
             <h2>{data.title}</h2>
             <p>{data.description}</p>
-
-            {/* ✅ Navigate to /styles only for "Pick Style" */}
-            {data.title === 'Pick Style' && (
-              <button
-                onClick={() => navigate('/styles')}
-                style={{
-                  marginTop: '1rem',
-                  padding: '0.5rem 1rem',
-                  background: '#fe9e0d',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '10px',
-                  cursor: 'pointer',
-                }}
-              >
-                Explore Styles
-              </button>
-            )}
+            <button
+              onClick={() => navigate('/styles')}
+              style={{
+                marginTop: '1rem',
+                padding: '0.5rem 1rem',
+                background: '#fe9e0d',
+                color: 'white',
+                border: 'none',
+                borderRadius: '10px',
+                cursor: 'pointer',
+              }}
+            >
+              {data.buttonText}
+            </button>
           </div>
         ))}
       </div>
