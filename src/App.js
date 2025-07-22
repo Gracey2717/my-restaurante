@@ -21,7 +21,6 @@ function App() {
             element={
               <>
                 <Home />
-                <Work />
                 {/* You can add About, Testimonials, etc. here too */}
                 <Footer />
               </>
