@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Work from "./components/Work";
 import Footer from "./components/Footer";
 import ProductShowcase from "./Data/ProductShowcase"; // Adjust path as needed
+import ProductDetails from "./Data/ProductDetails";
 
 import "./App.css";
 
@@ -37,6 +38,15 @@ function App() {
               </>
             }
           />
+        <Route
+         path="/product/:id"
+         element={
+          <>
+         <ProductDetails />
+           <Footer />
+            </>
+         }
+         />
         </Routes>
       </div>
     </Router>
